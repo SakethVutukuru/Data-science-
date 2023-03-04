@@ -2,7 +2,7 @@
 
 ## 1- Fake News Detection
 An example of how to use scikit-learn to build a machine learning model for text classification. 
-Data- news 
+Data- news.zip
 ### Passive Aggressive (PA) Classifier 
 is a type of online learning algorithm used for classification tasks. It falls under the category of supervised machine learning algorithms that are used for binary classification problems.
 PA classifiers work on the principle of being passive when the current model correctly classifies a training example, but aggressive when it makes a mistake. 
