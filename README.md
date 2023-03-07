@@ -26,4 +26,4 @@ After making we need to detect lane lines. The technique used to detect mathemat
 
 
 # Contributing
-If you find any bugs or issues with any of these projects, please feel free to submit an issue or a pull request. We welcome contributions from the community.
+If you find any bugs or issues with any of these projects, please feel free to submit an issue or a pull request. I welcome contributions from the community.
