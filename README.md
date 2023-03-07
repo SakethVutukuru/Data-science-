@@ -24,6 +24,15 @@ This project implements a lane detection algorithm that can identify and mark th
 To detect white markings in the lane, first, we need to mask the rest part of the frame. We do this using frame masking. The frame is nothing but a NumPy array of image pixel values. To mask the unnecessary pixel of the frame, we simply update those pixel values to 0 in the NumPy array.
 After making we need to detect lane lines. The technique used to detect mathematical shapes like this is called Hough Transform. Hough transformation can detect shapes like rectangles, circles, triangles, and lines.
 
+## 3- Sentiment Analysis model using R programming.
+What is sentiment Analaysis?
+
+Sentiment analysis, also known as opinion mining or emotion AI, is a process that involves using natural language processing (NLP), text analysis, and computational linguistics to identify, extract, and quantify the affective states and subjective information in a given piece of text. The purpose of sentiment analysis is to determine whether the emotional tone of a message is positive, negative, or neutral.
+
+Sentiment analysis combines machine learning and NLP to analyze a piece of text and determine the sentiment behind it. It can be used to analyze various types of text data, including emails, customer support chat transcripts, social media comments, and reviews.
+### How do we find the sentiments? Which libraries do we use?
+Three general-purpose lexicons, such as AFINN and Bing Loughran, will be used.
+The unigrams are used in these three lexicons. A word selected from a given body of text is all that makes up a sequence of one item, or a unigram, which is a form of n-gram model. The words are given scores in the AFINN lexicon model that range from -5 to 5. A rise in negativity matches a decline in sentiment, whereas a rise in positivity matches a rise in sentiment. On the other hand, the Bing Lexicon Model categorizes the sentiment as either positive or negative. Finally, there is the Loughran model, which analyzes the shareholder reports. To extract the sentiments for this project, we will use the Bing lexicons.
 
 # Contributing
 If you find any bugs or issues with any of these projects, please feel free to submit an issue or a pull request. I welcome contributions from the community.
