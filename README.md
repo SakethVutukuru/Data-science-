@@ -17,3 +17,13 @@ The PA classifier is implemented in scikit-learn and can be used with various pa
 -The PassiveAggressiveClassifier object is fit on the transformed training dataset.
 -The accuracy of the model is evaluated on the transformed testing dataset, and the confusion matrix is printed as well to visualize true positives, true negatives, false positives, and false negatives.
 -Overall, the code uses machine learning techniques to detect fake news by training a classification model on a dataset of news articles and their labels (whether they are fake or not). The model uses the numerical representations of the text data to make predictions about whether a news article is real or fake, based on the patterns it learned during training.
+
+## 2 - Road Lane-Line Detection with Python & OpenCV
+This project implements a lane detection algorithm that can identify and mark the lanes on a road. The project is implemented using Python and OpenCV.
+#Frame Masking and Hough Line Transformation
+To detect white markings in the lane, first, we need to mask the rest part of the frame. We do this using frame masking. The frame is nothing but a NumPy array of image pixel values. To mask the unnecessary pixel of the frame, we simply update those pixel values to 0 in the NumPy array.
+After making we need to detect lane lines. The technique used to detect mathematical shapes like this is called Hough Transform. Hough transformation can detect shapes like rectangles, circles, triangles, and lines.
+
+
+#Contributing
+If you find any bugs or issues with any of these projects, please feel free to submit an issue or a pull request. We welcome contributions from the community.
