@@ -25,5 +25,5 @@ To detect white markings in the lane, first, we need to mask the rest part of th
 After making we need to detect lane lines. The technique used to detect mathematical shapes like this is called Hough Transform. Hough transformation can detect shapes like rectangles, circles, triangles, and lines.
 
 
-#Contributing
+# Contributing
 If you find any bugs or issues with any of these projects, please feel free to submit an issue or a pull request. We welcome contributions from the community.
