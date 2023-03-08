@@ -33,6 +33,7 @@ Sentiment analysis combines machine learning and NLP to analyze a piece of text 
 ### How do we find the sentiments? Which libraries do we use?
 Three general-purpose lexicons, such as AFINN and Bing Loughran, will be used.
 The unigrams are used in these three lexicons. A word selected from a given body of text is all that makes up a sequence of one item, or a unigram, which is a form of n-gram model. The words are given scores in the AFINN lexicon model that range from -5 to 5. A rise in negativity matches a decline in sentiment, whereas a rise in positivity matches a rise in sentiment. On the other hand, the Bing Lexicon Model categorizes the sentiment as either positive or negative. Finally, there is the Loughran model, which analyzes the shareholder reports. To extract the sentiments for this project, we will use the Bing lexicons.
+<img width="967" alt="image" src="https://user-images.githubusercontent.com/115586733/223658698-a510b7ba-9e19-4bed-b23b-f23f6087bea9.png">
 
 # Contributing
 If you find any bugs or issues with any of these projects, please feel free to submit an issue or a pull request. I welcome contributions from the community.
