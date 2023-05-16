@@ -35,5 +35,27 @@ Three general-purpose lexicons, such as AFINN and Bing Loughran, will be used.
 The unigrams are used in these three lexicons. A word selected from a given body of text is all that makes up a sequence of one item, or a unigram, which is a form of n-gram model. The words are given scores in the AFINN lexicon model that range from -5 to 5. A rise in negativity matches a decline in sentiment, whereas a rise in positivity matches a rise in sentiment. On the other hand, the Bing Lexicon Model categorizes the sentiment as either positive or negative. Finally, there is the Loughran model, which analyzes the shareholder reports. To extract the sentiments for this project, we will use the Bing lexicons.
 <img width="967" alt="image" src="https://user-images.githubusercontent.com/115586733/223658698-a510b7ba-9e19-4bed-b23b-f23f6087bea9.png">
 
+## 4- car sales prediction using linear regression.
+Data set: quickr_car.csv
+The drop in the R2 score when using a random state of i in the loop compared to the initial R2 score can be attributed to the variation introduced by different train-test splits. The initial R2 score of 0.6691562168490146 was obtained using a single train-test split, while the subsequent R2 score of 0.6352311333149598 was obtained by looping over 1000 different random states and calculating the R2 score for each train-test split.
+
+The variation in the R2 score is due to the randomness introduced by the train-test split process. The train-test split randomly partitions the data into a training set and a test set, and the model is trained and evaluated on different subsets of the data each time. This variation in the composition of the training and test sets can affect the performance of the model and lead to different R2 scores.
+
+To address this issue and improve the reliability of the model evaluation, it is common to perform cross-validation. Cross-validation involves splitting the data into multiple subsets (folds), training and evaluating the model on different combinations of these subsets, and then aggregating the evaluation metrics. This provides a more robust estimate of the model's performance.
+
+R2 score remains the same even after using cross-validation, it suggests that the current model (linear regression with the specified features) may have reached its performance limit given the data and features used. However, there are a few approaches you can try to potentially increase the R2 score:
+
+Feature Engineering: Consider exploring and creating additional features that may have a stronger relationship with the target variable. This could involve deriving new features from existing ones or incorporating external data sources. Feature engineering can help the model capture more meaningful patterns and improve its predictive power.
+
+Model Selection: Linear regression assumes a linear relationship between the features and the target variable. If the relationship is more complex, consider trying other regression models that can capture non-linear patterns, such as decision trees, random forests, or support vector regression. Experiment with different models to see if they can capture more complex relationships in the data.
+
+Regularization Techniques: Regularization methods like Ridge regression and Lasso regression can help improve the model's performance by reducing overfitting. These techniques add a penalty term to the loss function, which discourages large coefficients and helps in controlling model complexity. Regularization can sometimes improve the generalization ability of the model and lead to better performance.
+
+Feature Selection: Evaluate the importance of each feature in the model and consider removing irrelevant or redundant features. Feature selection techniques like recursive feature elimination or using feature importance scores from tree-based models can help identify the most informative features. By focusing on the most relevant features, the model can reduce noise and potentially improve performance.
+
+Data Quality: Check for any data quality issues, missing values, outliers, or inconsistencies that could affect the model's performance. Preprocess the data by handling missing values appropriately (e.g., imputation), treating outliers, and normalizing or scaling the features if necessary.
+
+Ensemble Methods: Explore ensemble methods such as random forests or gradient boosting, which combine multiple models to improve performance. Ensemble methods can often capture complex interactions and patterns in the data and lead to better predictive performance.
+
 # Contributing
 If you find any bugs or issues with any of these projects, please feel free to submit an issue or a pull request. I welcome contributions from the community.
